@@ -45,21 +45,16 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
 
     if (savedName === undefined || savedMemberId === undefined) {
       setIsLogin(false);
-
-      setIsChecking(false);
     }
 
     if (refetchSuccess && savedName && savedName) {
       setIsLogin(true);
-
-      setIsChecking(false);
     }
 
     if ((error && savedName === undefined) || savedMemberId === undefined) {
       localStorage.removeItem('name');
       localStorage.removeItem('memberId');
       setIsLogin(false);
-      setIsChecking(false);
     }
 
     setIsChecking(false);
