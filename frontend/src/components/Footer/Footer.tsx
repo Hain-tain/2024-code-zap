@@ -21,7 +21,7 @@ const Footer = () => {
       </Text.Small>
       <S.ContactEmail href='mailto:codezap2024@gmail.com'>
         <Text.Small color='inherit' weight='bold'>
-          문의 :
+          문의 메일 :
         </Text.Small>{' '}
         <Text.Small color='inherit'>codezap2024@gmail.com</Text.Small>{' '}
       </S.ContactEmail>
